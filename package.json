@@ -1,0 +1,26 @@
+{
+  "name": "charcoal-datasette-theme",
+  "version": "1.0.0",
+  "description": "A minimalist monochromatic theme for Datasette.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julien040/charcoal-datasette-theme.git"
+  },
+  "keywords": [
+    "datasette",
+    "theme",
+    "css",
+    "minimalist",
+    "grayscale"
+  ],
+  "author": "julien040",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/julien040/charcoal-datasette-theme/issues"
+  },
+  "homepage": "https://github.com/julien040/charcoal-datasette-theme#readme"
+}

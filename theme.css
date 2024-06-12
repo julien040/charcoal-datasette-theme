@@ -157,16 +157,28 @@ header nav .crumbs a:last-child {
 }
 
 .select-wrapper select,
-.filters input.filter-value {
+.filters input.filter-value,
+form input[type="search"],
+form input[type="text"] {
   background: var(--White, #fff);
   border-radius: 6px;
   padding: 0.6rem 1rem;
   border: 0;
 }
 
+form label {
+  font-weight: 600;
+}
+
 div.filter-row {
   display: flex;
-  gap: 1px;
+  align-items: center;
+  gap: 2px;
+}
+
+/* The small cross to remove a filter */
+div.filter-row > a:last-child[href="#"] {
+  margin-left: 4px;
 }
 
 form input[type="submit"],
@@ -258,6 +270,20 @@ table tbody tr td a:visited {
   color: var(--text80);
 }
 
+@media only screen and (max-width: 576px) {
+  table.rows-and-columns tbody tr {
+    padding: 0.8rem;
+    background-color: var(--White);
+    border: none;
+    border-radius: 6px;
+  }
+
+  table.rows-and-columns tbody tr td {
+    padding-bottom: 0.5rem;
+    margin-top: 0.2rem;
+  }
+}
+
 /* Move the next page button to the middle */
 div.table-wrapper + p {
   text-align: center;
@@ -267,6 +293,16 @@ div.table-wrapper + p {
 div.table-wrapper + p > a {
   color: var(--text70);
   font-size: 0.9rem;
+}
+
+/* Zero results */
+p.zero-results {
+  border-radius: 6px;
+  background: var(--White, #fff);
+  padding: 1rem;
+  border: none;
+  margin-top: 1rem;
+  font-style: normal;
 }
 
 /* Export */
@@ -327,6 +363,11 @@ footer.ft a:link,
 footer.ft a:visited {
   color: var(--text);
   text-decoration: underline;
+}
+
+/* Add a small ad */
+footer.ft::after {
+  content: " · Charcoal theme";
 }
 
 /* Table selection */

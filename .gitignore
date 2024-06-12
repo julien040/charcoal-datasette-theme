@@ -5,3 +5,4 @@ metadata*.json
 *.sqlite3
 *.out
 .gut
+.DS_Store
